@@ -6,8 +6,8 @@ jobs:
   test-and-build: 
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2 # checkout specific code you pushed to run this
-    - uses: action/setup-node@v2 # ubuntu latest does not coem preinstalled with node so this installs it
+    - uses: actions/checkout@v3 # checkout specific code you pushed to run this
+    - uses: actions/setup-node@v3 # ubuntu latest does not coem preinstalled with node so this installs it
       with: 
         node-version: '17'
       # defining our own steps
